@@ -687,13 +687,13 @@ chrome.cast.Session.prototype.sendMessage = function (namespace, message, succes
 	if (typeof message === 'object') {
 		message = JSON.stringify(message);
 	}
-	execute('sendMessage', namespace, message, function() {
+	execute('sendMessage', namespace, message, function(err) {
 		
-		successCallback && successCallback();
-		
-	}, function(err) {
-		
-		handleError(err, errorCallback);
+		if (!err) {
+			successCallback && successCallback();
+		} else {
+			handleError(err, errorCallback);
+		}
 	});
 };
 
