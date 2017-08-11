@@ -15,11 +15,7 @@ cordova plugin add https://github.com/dabder/cordova-chromecast-1.git
 ```
 
 ## Example
-<br>
-<button onclick="initialize();">Initialize</button>
-<span id="message">---</span>
-<br><br>
-<button onclick="cast()">Cast</button>
+
 
 ```javascript
 
