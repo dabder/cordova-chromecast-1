@@ -19,7 +19,7 @@ cordova plugin add https://github.com/dabder/cordova-chromecast-1.git
 ```javascript
 
 initialize = function () {
-    var appId = '04251B9B';
+    var appId = 'xxxxxxxx';
     var _session;
 
     var sessionRequest = new chrome.cast.SessionRequest(appId);
