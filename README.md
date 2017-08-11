@@ -6,6 +6,10 @@ Chromecast in Cordova
 This is a fork of https://github.com/c4software/cordova-chromecast-1.git
 which contains the required files to enable automatic installation from Cordova CLI.
 
+Main fixes :
+* Compatibility with Cordova 7+ 
+* Fix Google Play library clash
+* Fix session.sendMessage error handling  
 
 ## Installation
 For now, add the plugin from this repository, we'll publish soon with more progress.
