@@ -15,6 +15,11 @@ cordova plugin add https://github.com/dabder/cordova-chromecast-1.git
 ```
 
 ## Example
+<br>
+<button onclick="initialize();">Initialize</button>
+<span id="message">---</span>
+<br><br>
+<button onclick="cast()">Cast</button>
 
 ```javascript
 
@@ -24,7 +29,6 @@ initialize = function () {
 
     var sessionRequest = new chrome.cast.SessionRequest(appId);
 
-    // chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID
     var receiverListener = function (status) {
         console.log("receiverListener status", status);
     }
