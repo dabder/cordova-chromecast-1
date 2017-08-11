@@ -9,6 +9,7 @@ which contains the required files to enable automatic installation from Cordova 
 Main fixes :
 * Compatibility with Cordova 7+ 
 * Fix Google Play library clash 
+* Fix session.sendMessage error handling
 
 ## Installation
 For now, add the plugin from this repository, we'll publish soon with more progress.
